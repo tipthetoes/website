@@ -1,0 +1,21 @@
+body {
+    background-color:darkslategrey;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+h1, h3, p {
+    font-family: 'Arial';
+    margin: 2;
+    color:bisque;
+}
