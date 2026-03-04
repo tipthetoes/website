@@ -1,7 +1,5 @@
 body {
     background-color:darkslategrey;
-    margin: 0;
-    padding: 0;
 }
 
 img {
@@ -14,8 +12,12 @@ h1 {
     text-align: center;
 }
 
-h1, h3, p {
-    font-family: 'Arial';
-    margin: 2;
+h3 {
+    color:crimson;
+}
+
+p {
+    margin: 10;
+    padding: 10;
     color:bisque;
 }
