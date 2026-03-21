@@ -12,10 +12,10 @@ img {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 20px;
-    border: 2px solid #d2b577;
+    border: 2px solid #ab9159;
 }
 
-h1 { /*main title*/
+h1 {
     text-align: center;
     color: #b32d2d;
     margin-top: 25px;
@@ -55,7 +55,7 @@ p {
     margin-bottom: 50px;
 }
 
-a:hover { /*hover*/
+a:hover {
   color: #b32d2d;
 }
 
@@ -68,21 +68,58 @@ a:hover { /*hover*/
     width: 300px;
 }
 
-.gif-1 {
+.gif-1 { /*frederick gif main page */
     margin-top: 50px;
     transform: rotate(-20deg);
     float: left;
 }
 
-.gif-2 {
+.gif-2 { /*orpheus gif main page */
+    margin-top: 50px;
     transform: rotate(20deg);
     margin-bottom: 50px;
     float: right;
 }
 
-.detective {
+.detective { /* orpheus main page */
     margin-top: 50px;
     border: none;
     width: 200px;
     float: right;
+}
+
+/*image caroursel */
+
+.carousel {
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow-x: scroll; /* horizontal scrolling */
+  scroll-snap-type: x mandatory; /* x-axis snapping */
+  -ms-overflow-style: none;  /* hide scrollbar IE & Edge */
+  position: relative;
+  scrollbar-width: none;  /* hide scrollbar firefox */
+}
+
+/* hide scrollbar */
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.carousel-list {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.carousel-item {
+  flex: 0 0 100%; /* full width of container */
+  scroll-snap-align: center; /* align when snapped */
+}
+
+.carousel-item img {
+  width: 100%;
+  height: auto; /* aspect ratio */
+  object-fit: cover; /* images cover container */
 }
