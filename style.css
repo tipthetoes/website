@@ -42,7 +42,15 @@ h1 {
     
 }
 
-h3 { /*titles*/
+h2 {
+    color: #ed3434e5;
+    font-family: 'Fondamento';
+    font-style: italic;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+h3 {
     color:#1f282c;
     margin-top: 50px;
     font-size:30px;
@@ -149,9 +157,41 @@ a:hover {
   object-fit: cover; /* images cover container */
 }
 
-.id {
-    margin-left: 10px;
+.id-1 {
+    display: inline-block;
+    transform: rotate(-5deg);
+    transform-origin: top left; 
+}
+
+.id-2 {
+    margin-left: 9px;
     display: inline-block;
     transform: rotate(5deg);
     transform-origin: top left; 
+    margin-bottom: 90px;
+}
+
+.comic-relief-bold {
+  font-family: "Comic Relief", system-ui;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.animated-1 {
+    display: block;
+    float: right;
+    background-color: transparent;
+    font-size: 80px;
+    font-family: "Comic Relief";
+    animation: color-change 3s infinite;
+}
+
+@keyframes color-change {
+  0% { color: red; }
+  16% { color: purple; }
+  33% { color: blue; }
+  50% { color: green; }
+  67% { color: yellow; }
+  82% { color: orange; }
+  100% { color: red; }
 }
